@@ -27,6 +27,8 @@ To visualize job opportunities in oil and gas industries in the world.
 
  * Which JS library to use?=> Investigation: maybe js library related to table visualization
 
+Candidate 1:  https://datatables.net/?ref=hackernoon.com
+
 
 
 
