@@ -23,7 +23,7 @@ To visualize job opportunities in oil and gas industries in the world.
 
  ## Consideration
  * How and where can I utilise database? 
-=> Realtime Version(waiting time) / Historical Version (Fast mode)
+=> MongoDB to store the info from web-scraping
 
  * Which JS library to use?=> Investigation: maybe js library related to table visualization
 
