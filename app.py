@@ -24,6 +24,12 @@ def home():
     # Return template and data
     return render_template("index.html", reference=all_data)
 
+@app.route("/dashboard")
+def dashboard():
+    
+    # Return template and data
+    return render_template("dashboard.html")
+
 
 
 @app.route("/<country>")
@@ -33,6 +39,14 @@ def country_data(country):
 
     
     return jsonify(country_data)
+
+@app.route("/all")
+def all_data():
+
+    all_data = json.loads(dumps(col.find()))
+
+    
+    return jsonify(all_data)
 
 
 if __name__ == "__main__":
