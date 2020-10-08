@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template, redirect, make_response
 from flask import jsonify
 from flask_pymongo import pymongo
 from config import mongo_pass
@@ -29,6 +29,14 @@ def dashboard():
     
     # Return template and data
     return render_template("dashboard.html")
+
+
+@app.route("/map")
+def map():
+    resp = make_response(render_template("map.html"));
+    resp.set_cookie('cookie1', 'value1', samesite='None', secure=True);
+    # Return template and data
+    return resp
 
 
 
